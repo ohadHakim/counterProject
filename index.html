@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ohad's counter project</title>
     <style>
+      .contianer {
+        display: flex;
+        justify-content: space-between;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px 0;
+      }
       button {
         width: 100px;
         height: 100px;
@@ -21,15 +28,21 @@
         background-color: red;
       }
       #counter-result {
+        width: 100%;
+        display: flex;
+        justify-content: center;
         font-size: xx-large;
+        margin: 0 auto;
       }
     </style>
     <script defer src="ex.js"></script>
   </head>
   <body>
-    <button id="plus-btn">PLUS</button>
-    <button id="minus-btn">Minus</button>
-    <button id="reset-btn">Back to Zero</button>
+    <div class="contianer">
+      <button id="plus-btn">PLUS</button>
+      <button id="minus-btn">Minus</button>
+      <button id="reset-btn">Back to Zero</button>
+    </div>
     <div id="counter-result">0</div>
   </body>
 </html>
