@@ -23,12 +23,16 @@ function addToCounter() {
 
 function minusCounter() {
   counterResult.innerHTML = --counter;
+  if (counter < 10) {
+    document.getElementById("plus-btn").disabled = false;
+  }
 }
 
 function resetCounter() {
   counter = STARTING_COUNTER_DEFAULTS;
   counterResult.innerHTML = counter;
   if ((counter = 10)) {
-    window.location.reload();
+    document.getElementById("plus-btn").disabled = false;
+    counter = 0;
   }
 }
